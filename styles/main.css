@@ -1,0 +1,59 @@
+
+.navbar {
+  padding-top:20px;
+  background: #e6e6e6;
+  height:60px;
+  z-index: 2;
+
+}
+
+.navbar a {
+  color: #737373;
+}
+
+.landing-page {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width:100%;
+  margin-top: 20px;
+}
+
+.mission p {
+  color: #737373;
+  margin-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.full-screen img {
+  width: 100%;
+}
+
+.nav-heading {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+#services{
+  background:green;
+}
+.nav-heading h2 {
+  font-weight: bold;
+  color: white;
+}
+.nav-heading-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.service-list h4 {
+  text-transform: uppercase;
+  margin-top: 20px;
+
+}
+
+#advantage {
+  background: navy;
+}
