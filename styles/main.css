@@ -57,3 +57,16 @@
 #advantage {
   background: navy;
 }
+
+.focus-image {
+  width:25% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#service-areas, #about{
+  background:navy;
+}
+#portfolio, #contact{
+  background: green;
+}
