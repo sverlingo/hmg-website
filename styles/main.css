@@ -4,6 +4,8 @@
   background: #e6e6e6;
   height:60px;
   z-index: 2;
+  font-family: "Lora", serif;
+
 
 }
 
@@ -17,29 +19,43 @@
   left: 0px;
   width:100%;
   margin-top: 20px;
-}
 
+}
+.white-background{
+  background:white;
+}
 .mission p {
   color: #737373;
   margin-top: 20px;
   font-size: 20px;
-  font-style: italic;
+  font-family: "Open Sans", sans-serif;
 }
 
 .full-screen img {
   width: 100%;
 }
+.background-image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+
+}
 .nav-heading {
   margin-top: 5px;
-  margin-bottom: 5px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 35px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-family: "Lora", serif;
+  text-transform: uppercase;
 
 }
-#services{
-  background:green;
-}
+
+
 .nav-heading h2 {
   font-weight: bold;
   color: white;
@@ -48,25 +64,167 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.service-list {
+  margin-bottom: 35px;
+}
+.service-column {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .service-list h4 {
+  color: #737373;
   text-transform: uppercase;
   margin-top: 20px;
-
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  padding: 5px;
 }
 
 #advantage {
-  background: navy;
+  opacity: 0.5;
 }
 
+.advantage-box {
+  border-color: #36743F;
+  border-style: double;
+  border-width: 10px;
+}
+.advantage {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+
+.advantage p, h4 {
+  font-size: 25px;
+  color: #737373;
+  font-family: "Open Sans", sans-serif;
+}
+
+.advantage h3 {
+  color: #05094F;
+  font-family: "Lora", sans-serif;
+  font-size: 28px;
+}
+
+
 .focus-image {
-  width:25% !important;
+  width: 200px !important;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#service-areas, #about{
-  background:navy;
+
+.star {
+  padding:30px;
+  position: relative;
+  width: 25% /* for IE 6 */
 }
-#portfolio, #contact{
-  background: green;
+.emph-green h3{
+  color:#36743F;
+  font-size: 25px;
+
+}
+.emph-green h2{
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  color:#36743F;
+  font-size: 40px;
+
+}
+
+.emph-green h4{
+  color:#36743F;
+  font-size: 40px;
+}
+.emph-blue h3 {
+  color:#05094F;
+  font-size: 25px;
+}
+.emph-blue h2 {
+  position: absolute;
+  top:25%;
+  left: 0;
+  width: 100%;
+  color:#05094F;
+  font-size: 40px;
+}
+
+.small-logo img {
+  width: 300px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.areas {
+  background: #e6e6e6;
+  padding: 30px;
+  margin-top: 25%;
+  opacity: .5;
+}
+
+.areas p {
+  font-size: 25px;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+.port-image img {
+  width:600px;
+}
+
+.contact {
+  margin-bottom: 40px;
+
+}
+.contact img {
+  width: 200px;
+}
+
+.contact h4 {
+  font-family: "Open Sans", sans-serif;
+  color: #737373;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+
+.contact h5 {
+
+  font-family: "Open Sans", sans-serif;
+  color: #737373;
+  font-size: 18px;
+}
+
+.contact a {
+  font-family: "Open Sans", sans-serif;
+  color: #737373;
+  font-size: 18px;
+}
+
+.lower {
+  margin-top: 100px;
+}
+#advantage, #service-areas, #about{
+  background: #05094F;
+
+}
+#services, #portfolio, #contact{
+  background: #36743F;
+}
+
+#portfolio{
+  opacity: .5;
+}
+.nav-footer {
+  padding-top:20px;
+    background: #e6e6e6;
+    height:60px;
+    font-family: "Lora", serif;
+    font-size: 18px;
 }

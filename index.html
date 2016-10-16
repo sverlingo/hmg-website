@@ -8,7 +8,27 @@
  <link rel="stylesheet" type="text/css" href="styles/main.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+ <script>
+   function initMap() {
+     var mapExists = document.getElementById("map");
+     var myLatLng = {lat: 39.0529032, lng: -84.563022};
+     var mapOptions = {
+       center: new google.maps.LatLng(39.0529032,-84.563022),
+       zoom: 10
+     };
+   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+   var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hemmer Management Group'
+        });
+
+ }
+ </script>
+ <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEM6mz05aDppBvy5Uk1H9erxxLNywf-Oc&callback=initMap">
+ </script>
+ <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
 <body>
   <nav class="navbar navbar-fixed-top center">
     <div class="row">
@@ -21,10 +41,13 @@
     </div>
   </nav>
   <div class="container-fluid landing-page">
-    <div class="row">
+    <!-- <div class="background-image">
+      <img src="images/inside_atrium_placeholder_bw.jpg"></img>
+    </div> -->
+    <div class="row white-background">
       <div class="col-md-3"></div>
       <div class="col-md-6 text-center">
-        <img class="img-responsive" src="images/HMG-Logo-ai.PNG" alt="HMG Logo"></img>
+        <img class="img-responsive " src="images/HMG-Logo-ai.PNG" alt="HMG Logo"></img>
         <div class="mission">
           <p>Providing professional commercial real estate services with the focus on
             providing value and responsive service to tenants and investors</p>
@@ -40,7 +63,7 @@
         <h2>Our Services</h2>
       </div>
       <div class="row service-list">
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-center service-column">
           <h4>Asset Management</h4>
           <h4>Property Manangement</h4>
           <h4>Distressed Asset & Receivership Services</h4>
@@ -49,10 +72,10 @@
           <h4>Lease Administration</h4>
           <h4>Tenant Relations</h4>
         </div>
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-center service-column">
           <h4>Leasing Services</h4>
           <h4>Sales Services</h4>
-          <h4>Acquisition & Due Diligence Coordination<h4>
+          <h4>Acquisition & Due Diligence Coordination</h4>
           <h4>Finance & Refinancing Services</h4>
           <h4>Investment Analysis</h4>
           <h4>Investor Relations</h4>
@@ -62,7 +85,8 @@
       <div id="advantage" class="nav-heading">
         <h2>HMG Advantage</h2>
       </div>
-      <div class="row">
+      <div class="advantage-box">
+      <div class="row advantage">
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <p>The primary objective of Hemmer Management Group (HMG) is to provide professional commercial real estate services with the focus on providing value and responsive service
@@ -70,7 +94,7 @@ to the tenants and investors that we serve.  HMG Advantage includes:</p>
         </div>
         <div class="col-md-1"></div>
       </div>
-      <div class="row">
+      <div class="row advantage">
         <div class="col-md-6">
           <h4>Local Knowledge</h4>
           <h4>Experience</h4>
@@ -85,9 +109,11 @@ to the tenants and investors that we serve.  HMG Advantage includes:</p>
           <h4>Resources</h4>
         </div>
       </div>
-      <div class="row">
+    </div>
+
+      <div class="row advantage">
         <div class="col-md-6 text-center">
-          <h3>Client & Investor Focus</h3>
+          <h3><b>Client & Investor Focus</b></h3>
           <img class="img-responsive focus-image" src="images/maximize_bw.png" alt="max img"></img>
           <h4>Maximize revenues by maximizing occupancy and exploring revenue enhancement ideas</h4>
           <h4>Minimize operating expenses by implementing cost reduction initiatives and competitive bidding</h4>
@@ -97,7 +123,7 @@ to the tenants and investors that we serve.  HMG Advantage includes:</p>
           <h4>Meet or exceed expectations</h4>
         </div>
         <div class="col-md-6 text-center">
-          <h3>Tenant Focus</h3>
+          <h3><b>Tenant Focus</b></h3>
           <img class="img-responsive focus-image" src="images/minimize_gw.png" alt="max img"></img>
           <h4>Minimize operating expenses while maintaining service level</h4>
           <h4>Flexibility and creative solutions to accommodate tenant's needs</h4>
@@ -107,56 +133,131 @@ to the tenants and investors that we serve.  HMG Advantage includes:</p>
           <h4>Meet or exceed expectations</h4>
         </div>
       </div>
-      <div class="row">
+      <div class="row advantage">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-          <h3>OUR FOUR CORNERSTONES GIVE YOU THE <b>STAR</b> TREATMENT</h3>
+          <h3><b>OUR FOUR CORNERSTONES</br>GIVE YOU THE <span class="emph-green"><b>STAR</b></span> TREATMENT</b></h3>
           <div class="row">
-            <div class="col-md-3">
-              <img src="images/corners-01.png"></img>
-              <p>S</p>
-              <p>Service</p>
+            <div class="col-md-3 emph-green star">
+              <h2>S</h2>
+              <img class="corners" src="images/corners-01.png"></img>
+
+              <h3>Service</h3>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 emph-blue star">
+              <h2>T</h2>
+              <img class="corners"src="images/corners-03.png"></img>
+              <h3>Trust</h3>
+            </div>
+            <div class="col-md-3 emph-green star">
+              <h2>A</h2>
+              <img src="images/corners-01.png"></img>
+              <h3>Accountability</h3>
+            </div>
+            <div class="col-md-3 emph-blue star">
+              <h2>R</h2>
               <img src="images/corners-03.png"></img>
-              <p>T</p>
-              <p>Trust</p>
-            </div>
-            <div class="col-md-3">
-              <img src="images/corners-01.png"></img>
-              <p>A</p>
-              <p>Accountability</p>
-            </div>
-            <div class="col-md-3">
-              <img src="images/corners-01.png"></img>
-              <p>R</p>
-              <p>Respect</p>
+              <h3>Respect</h3>
             </div>
           </div>
-          <img src="images/HMG-Logo-ai.PNG"></img>
+          <div class="small-logo">
+            <img src="images/HMG-Logo-ai.PNG"></img>
+          </div>
         </div>
         <div class="col-md-3"></div>
       </div>
       <div id="service-areas" class="nav-heading">
         <h2>PRIMARY SERVICE AREAS</h2>
       </div>
-      <img src="images/hmg_map-01.png"></img>
+      <div class="row">
+        <div class="col-md-8">
+          <img src="images/hmg_map-01.png"></img>
+        </div>
+        <div class="col-md-3 areas">
+          <p>Hemmer Management Group services clients
+            throughout the greater Cincinnati region with
+            properties located across Kentucky, Ohio and Indiana</p>
+        </div>
+      </div>
+
+
 
     <div id="portfolio" class="nav-heading">
       <h2>Portfolio</h2>
     </div>
+    <div class="port-image">
       <img src="images/portfolio.png"></img>
-
-      <div id="about" class="nav-heading">
+    </div>
+      <div id="about" class="nav-heading ">
         <h2>About Hemmer</h2>
       </div>
-        <h1>A Family Operated Business With Over
-90 Years of Experience</h1>
-<img src="images/PH1 JMH Truck.jpg"></img>
+      <div class="emph-green">
+        <h4>A Family Operated Business With Over</br>
+          <b>90 Years</b> of Experience</h4>
+        </div>
+          <img src="images/PH1 JMH Truck.jpg"></img>
 
-<div id="contact" class="nav-heading">
-  <h2>Contact</h2>
-</div>
+      <div id="contact" class="nav-heading">
+        <h2>Contact</h2>
+      </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5 contact">
+            <img src="images/jon_hemmer_web.png"></img>
+            <h4><b>Jon Hemmer</b></h4>
+            <h5>President</h5>
+            <h5>(859) 331-2900</h5>
+            <h5>JonHemmer@HemmerGroup.com</h5>
+            </br>
+            <h4><b>Primary Focus</b></h4>
+            <h5>Investor Relations</h5>
+            <h5>Financing</h5>
+            <h5>Acquisitions / Sales</h5>
+            <h5>Leasing</h5>
+          </br>
+            <a href="images/JonHemmerResume.pdf" target="_blank"><span class="glyphicon glyphicon-file"></span> Resume</a>
+          </div>
+          <div class="col-md-5 contact">
+            <img src="images/nancy_lenham.png"></img>
+            <h4><b>Nancy Lanham</b></h4>
+            <h5>Property Manager</h5>
+            <h5>(859) 331-2900</h5>
+            <h5>NancyLanham@HemmerGroup.com</h5>
+            </br>
+            <h4><b>Primary Focus</b></h4>
+            <h5>Tenant Relations</h5>
+            <h5>Budgets</h5>
+            <h5>Vendor Management</h5>
+            <h5>Lease Administration</h5>
+          </br>
+            <a href="images/NancyLanhamResume.pdf" target="_blank"><span class="glyphicon glyphicon-file"></span> Resume</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d396783.6063786378!2d-84.571605!3d39.018235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa35d5922a9138128!2sHemmer+Management+Group!5e0!3m2!1sen!2sus!4v1476634699348" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-6 text-left contact lower">
+            <h4><b>HEMMER MANAGEMENT</b></h4>
+            <h5>250 GRANDVIEW DRIVE, SUITE 100</h5>
+            <h5>FORT MITCHELL, KY  41017</h5>
+          </br>
+            <h5>O:  (859) 331-2900</h5>
+            <h5>F:  (859) 331-2993</h5>
+<a href="https://twitter.com/HemmerMgmtGroup" class="twitter-follow-button" data-show-count="false">Follow @HemmerMgmtGroup</a><script async src="http://platform.twitter.com/widets.js" charset="utf-8"></script>
+</br>
+<iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2FHMG.jon&width=450&height=80&layout=standard&size=large&show_faces=true&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+          </div>
+      </div>
+      <img src="images/hemmer-headquarters-park-75.jpg"></img>
+      <div class="nav-footer">
+        <p>HEMMER MANAGEMENT GROUP   |   250 GRANDVIEW DRIVE, SUITE 100, FORT MITCHELL, KY 41017 |
+O:  (859) 331-2900    |     F:   (859) 331-2993</p>
+      </div>
+      <div class="small-logo">
+      <img src="images/HMG-Logo-ai.PNG"></img>
+    </div>
   </div>
 </body>
 </html>
