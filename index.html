@@ -6,8 +6,10 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  <link rel="stylesheet" type="text/css" href="styles/main.css">
+ <script src="https://use.fontawesome.com/ac14ca70b9.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="javascripts/home.js"></script>
  <script>
    function initMap() {
      var mapExists = document.getElementById("map");
@@ -33,10 +35,10 @@
   <nav class="navbar navbar-fixed-top center">
     <div class="row">
       <div class="col-md-2"></div>
-      <div class="col-md-2 text-center"><a class="nav-link" href="#services">HMG Services</a></div>
-      <div class="col-md-2 text-center"><a class="nav-link" href="#service-areas">Primary Service Area</a></div>
-      <div class="col-md-2 text-center"><a class="nav-link" href="#portfolio">Portfolio</a></div>
-      <div class="col-md-2 text-center"><a class="nav-link" href="#contact">Contact</a></div>
+      <div class="col-md-2 text-center"><a class="nav-link" id="service-link">HMG Services</a></div>
+      <div class="col-md-2 text-center"><a class="nav-link" id="area-link">Primary Service Area</a></div>
+      <div class="col-md-2 text-center"><a class="nav-link" id="portfolio-link">Portfolio</a></div>
+      <div class="col-md-2 text-center"><a class="nav-link" id="contact-link">Contact</a></div>
       <div class="col-md-2"></div>
     </div>
   </nav>
@@ -58,6 +60,7 @@
     <div class="full-screen">
       <img class="full-screen" src="images/slider-1_nobkgnd.jpg"></img>
     </div>
+
     <div class="full-screen text-center service-list-container">
       <div id="services" class="nav-heading">
         <h2>Our Services</h2>
@@ -169,6 +172,7 @@ to the tenants and investors that we serve.  HMG Advantage includes:</p>
       <div id="service-areas" class="nav-heading">
         <h2>PRIMARY SERVICE AREAS</h2>
       </div>
+      <div class="timeline-container">
       <div class="row">
         <div class="col-md-8">
           <img src="images/hmg_map-01.png"></img>
@@ -179,12 +183,14 @@ to the tenants and investors that we serve.  HMG Advantage includes:</p>
             properties located across Kentucky, Ohio and Indiana</p>
         </div>
       </div>
+    </div>
 
 
 
     <div id="portfolio" class="nav-heading">
       <h2>Portfolio</h2>
     </div>
+
     <div class="port-image">
       <img src="images/portfolio.png"></img>
     </div>
@@ -195,7 +201,45 @@ to the tenants and investors that we serve.  HMG Advantage includes:</p>
         <h4>A Family Operated Business With Over</br>
           <b>90 Years</b> of Experience</h4>
         </div>
-          <img src="images/PH1 JMH Truck.jpg"></img>
+                  <div class="timeline-container">
+        <div class="row timeline">
+
+          <div class="col-md-2">
+            <button type="button" id="first" style="font-size:30px; font-weight:bold;">1921</button>
+          </div>
+          <div class="col-md-2">
+            <button type="button" id="second">1940's</button>
+          </div>
+          <div class="col-md-2">
+            <button type="button" id="third">1960's</button>
+          </div>
+          <div class="col-md-2">
+            <button type="button" id="forth">1970's</button>
+          </div>
+          <div class="col-md-2">
+            <button type="button" id="fifth">1980's</button>
+          </div>
+          <div class="col-md-2">
+            <button type="button" id="sixth">2000's</button>
+          </div>
+        </div>
+
+
+            <div class="timeline-content">
+            <div class="timeline-text">
+            <p><b><div id="timeline-header">First Generation</div></b></p>
+            <p><div id="timeline-description">The first generation of the Hemmer family in the construction and
+               real estate industries was started by John M. Hemmer. John M. Hemmer
+                Construction Company was founded in 1921 on values of old world
+                craftsmanship and master builder techniques. In the beginning,
+                this company primarily focused on constructing residential single
+                family homes and small apartment complexes, some of which they owned
+                and rented out.</div></p>
+                <div id="timeline-header-two" style="display:none">Future Investments</div>
+                <div id="timeline-description-two" style="display:none">Hemmer Investment Group (HIG) was formed in early 2012 to become the managing member for future real estate acquisitions & development for the Hemmer family. HIG is currently focused on exploring commercial real estate investment opportunities throughout Greater Cincinnati whereby HIG can enhance the value of the property by utilizing its various resources and experiences to maximize the return on investment. Jon J. Hemmer is the President of HMG & HIG. He has more than 28 years of commercial real estate experience in the various Hemmer family companies.</div>
+              </div>
+              </div>
+            </div>
 
       <div id="contact" class="nav-heading">
         <h2>Contact</h2>
@@ -207,7 +251,7 @@ to the tenants and investors that we serve.  HMG Advantage includes:</p>
             <h4><b>Jon Hemmer</b></h4>
             <h5>President</h5>
             <h5>(859) 331-2900</h5>
-            <h5>JonHemmer@HemmerGroup.com</h5>
+            <h5><a href="mailto:JonHemmer@HemmerGroup.com">JonHemmer@HemmerGroup.com</a></h5>
             </br>
             <h4><b>Primary Focus</b></h4>
             <h5>Investor Relations</h5>
@@ -222,7 +266,7 @@ to the tenants and investors that we serve.  HMG Advantage includes:</p>
             <h4><b>Nancy Lanham</b></h4>
             <h5>Property Manager</h5>
             <h5>(859) 331-2900</h5>
-            <h5>NancyLanham@HemmerGroup.com</h5>
+            <h5><a href="mailto:NancyLanham@HemmerGroup.com">NancyLanham@HemmerGroup.com</a></h5>
             </br>
             <h4><b>Primary Focus</b></h4>
             <h5>Tenant Relations</h5>
@@ -234,19 +278,20 @@ to the tenants and investors that we serve.  HMG Advantage includes:</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-7 text-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d396783.6063786378!2d-84.571605!3d39.018235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa35d5922a9138128!2sHemmer+Management+Group!5e0!3m2!1sen!2sus!4v1476634699348" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-          <div class="col-md-6 text-left contact lower">
+          <div class="col-md-5 text-left contact lower">
             <h4><b>HEMMER MANAGEMENT</b></h4>
             <h5>250 GRANDVIEW DRIVE, SUITE 100</h5>
             <h5>FORT MITCHELL, KY  41017</h5>
           </br>
             <h5>O:  (859) 331-2900</h5>
             <h5>F:  (859) 331-2993</h5>
-<a href="https://twitter.com/HemmerMgmtGroup" class="twitter-follow-button" data-show-count="false">Follow @HemmerMgmtGroup</a><script async src="http://platform.twitter.com/widets.js" charset="utf-8"></script>
-</br>
-<iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2FHMG.jon&width=450&height=80&layout=standard&size=large&show_faces=true&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </br>
+            <a class="social-media twitter" href="https://twitter.com/HemmerMgmtGroup" target="_blank"><i class="fa fa-twitter-square"></i></a>
+            <a class="social-media facebook" href="https://www.facebook.com/HMG.jon/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            <a class="social-media linkedin" href="https://www.linkedin.com/in/jonhemmer" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 
           </div>
       </div>
