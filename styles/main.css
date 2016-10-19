@@ -206,6 +206,10 @@
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
 }
+
+.sareas {
+  background:#505283;
+}
 #timeline-header, #timeline-header-two{
   font-weight: bold;
 }
@@ -304,7 +308,7 @@
 
 
 #advantage, #service-areas, #about{
-  background: #05094F;
+    background: #05094F;
 
 }
 #services, #portfolio, #contact{
