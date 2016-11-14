@@ -24,18 +24,23 @@ $(document).ready(function() {
   });
 
   $('#first').hover(function() {
-    document.getElementById('forth').style.fontSize='25px';
-    document.getElementById('forth').style.fontWeight= "normal";
-    document.getElementById('second').style.fontSize='25px';
-    document.getElementById('second').style.fontWeight= "normal";
-    document.getElementById('third').style.fontSize='25px';
-    document.getElementById('third').style.fontWeight= "normal";
-    document.getElementById('fifth').style.fontSize='25px';
-    document.getElementById('fifth').style.fontWeight= "normal";
-    document.getElementById('sixth').style.fontSize='25px';
-    document.getElementById('sixth').style.fontWeight= "normal";
-      document.getElementById('first').style.fontSize='30px';
-      document.getElementById('first').style.fontWeight= "bold";
+    document.getElementById('forth').className="unselected";
+    document.getElementById('first').className='selected';
+        document.getElementById('second').className="unselected";
+            document.getElementById('third').className="unselected";
+                document.getElementById('fifth').className="unselected";
+                    document.getElementById('sixth').className="unselected";
+    // document.getElementById('forth').style.fontSize='25px';
+    // document.getElementById('forth').style.fontWeight= "normal";
+    // document.getElementById('second').style.fontSize='25px';
+    // document.getElementById('second').style.fontWeight= "normal";
+    // document.getElementById('third').style.fontSize='25px';
+    // document.getElementById('third').style.fontWeight= "normal";
+    // document.getElementById('fifth').style.fontSize='25px';
+    // document.getElementById('fifth').style.fontWeight= "normal";
+    // document.getElementById('sixth').style.fontSize='25px';
+    // document.getElementById('sixth').style.fontWeight= "normal";
+
       document.getElementById('timeline-header').textContent="First Generation";
       document.getElementById('timeline-description').textContent="The first generation of the Hemmer family in the construction and real estate industries was started by John M. Hemmer. John M. Construction Company was founded in 1921 on values of old craftsmanship and master builder techniques. In the beginning, this company primarily focused on constructing residential single family homes and small apartment complexes, some of which they owned and rented out."
       document.getElementById('timeline-header-two').style.display = "none";
@@ -135,7 +140,7 @@ $(document).ready(function() {
         document.getElementById('sixth').style.fontSize='30px';
         document.getElementById('sixth').style.fontWeight= "bold";
         document.getElementById('timeline-header').textContent="Focus on Management";
-        document.getElementById('timeline-description').textContent="Hemmer Management Group (HMG) was formed at the end of 2011 with a primary focus to manage and oversee the Hemmer family commercial real estate portfolio and acquire additional properties. Currently, HMG manages 25 commercial buildings totaling more than 1.2 million square feet with a value in excess of $100 million primarily located in the Greater Cincinnati region."
+        document.getElementById('timeline-description').textContent="Hemmer Management Group (HMG) was formed at the end of 2011 with a primary focus to manage and oversee the Hemmer family commercial real estate portfolio and acquire additional properties. Currently, HMG manages 30 commercial buildings totaling more than 1.2 million square feet with a value in excess of $100 million primarily located in the Greater Cincinnati region."
         document.getElementById('timeline-header-two').style.display="block";
         document.getElementById('timeline-description-two').style.display="block";
         document.getElementById('photo-cont').style.backgroundImage = 'url("images/2000_hemmerhq.jpg")';

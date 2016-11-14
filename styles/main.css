@@ -9,10 +9,13 @@
 
 }
 
+
 .navbar a {
   color: #737373;
 }
-
+.navbar a:hover {
+  cursor: pointer;
+}
 .landing-page {
   position: absolute;
   top: 60px;
@@ -60,9 +63,7 @@
   padding: 65px;
 }
 
-.nav-link:hover {
-  cursor: pointer;
-}
+
 .nav-heading-container {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -108,7 +109,7 @@
 .advantage h3 {
   color: #05094F;
   font-family: "Lora", sans-serif;
-  font-size: 28px;
+  font-size: 33px;
 }
 
 
@@ -130,13 +131,20 @@
   font-size: 20px;
 
 }
+
+.star-emph-green {
+  color:#36743F !important;
+  font-size: 36px !important;
+  font-weight: bolder !important;
+
+}
 .emph-green h2{
   position: absolute;
   top: 22%;
   left: 0;
   width: 100%;
   color:#36743F;
-  font-size: 40px;
+  font-size: 43px;
   font-family: "Lora", serif;
 }
 
@@ -154,7 +162,7 @@
   left: 0;
   width: 100%;
   color:#05094F;
-  font-size: 40px;
+  font-size: 43px;
   font-family: "Lora", serif;
 }
 
@@ -196,9 +204,9 @@
 }
 .timeline-text {
   background: white;
-  opacity: .8;
+  opacity: .7;
   color: #05094F;
-  width: 900px;
+  width: 75%;
   position:relative;
   top: 10%;
   left: 10%;
@@ -225,6 +233,12 @@
   border:none;
   font-family: "Open Sans", sans-serif;
   font-size: 25px;
+}
+.selected {
+  font-size: 50px;
+}
+.unselected button {
+  font-size: 10px;
 }
 .timeline button:hover {
   font-size: 30px;

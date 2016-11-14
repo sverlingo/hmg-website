@@ -1,0 +1,51 @@
+@media (max-width: 991px) {
+  .navbar{
+    height:140px;
+  }
+  .landing-page {
+    top: 150px;
+  }
+
+  .nav-link {
+   padding:5px;
+  }
+  .nav-heading {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-family: "Lora", serif;
+    text-transform: uppercase;
+
+  }
+  .nav-heading h2 {
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+  }
+
+  .star {
+    text-align: center;
+  }
+  .port-image img{
+    width: 75%;
+  }
+  .timeline-container{
+    margin:0 !important;
+ }
+ .timeline-text {
+   width: 80%;
+ }
+
+ .timeline button{
+   font-size: 17px;
+ }
+ .timeline button:hover {
+   font-size: 20px;
+ }
+
+ .contact {
+   text-align: center;
+ }
+
+ .nav-footer {
+       height:120px;
+ }
